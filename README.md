@@ -17,7 +17,7 @@ anna:anna
 pere:pere
 ```
 la base de datos remota funciona con  dc=edt,dc=org **tipica de clase.**
-**usar la misma red para ambos contenedores**
+**usar la misma red para ambos contenedores** el cliente LDAP se llama **ldap**
 
 se modifica system-auth y pam_mount.conf.xml para montar un tmpfs de 100M
 
