@@ -24,3 +24,8 @@ se modifica system-auth y pam_mount.conf.xml para montar un tmpfs de 100M
 ```
 <volume user="*" fstype="tmpfs" mountpoint="~/tmp" options="size=100M,uid=%(USER),mode=0755" />
 ```
+Se inicia usando:
+
+```
+docker run --rm --name cliente -h cliente --net ldapnet --privileged -it joterop/m06pam
+```
