@@ -19,7 +19,7 @@ pere:pere
 la base de datos remota funciona con  dc=edt,dc=org **tipica de clase.**
 **usar la misma red para ambos contenedores** el cliente LDAP se llama **ldap**
 
-se modifica system-auth y pam_mount.conf.xml para montar un tmpfs de 100M
+se modifica system-auth y pam_mount.conf.xml para montar un tmpfs de 100M en el home del usuario
 
 ```
 <volume user="*" fstype="tmpfs" mountpoint="~/tmp" options="size=100M,uid=%(USER),mode=0755" />
